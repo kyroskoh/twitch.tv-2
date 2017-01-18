@@ -1,0 +1,74 @@
+$twitch-color: #6441a4;
+
+@font-face {
+  font-family: 'dimitri';
+  src: url('../font/dimis___.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0 5px 0;
+  color: $twitch-color;
+  font: 3em dimitri, sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-right: -20px;
+  padding: 20px;
+}
+
+li {
+  padding: 0 20px;
+  a, a:visited {
+    font: 1.3em "Arial Narrow", Arial, sans-serif;
+    color: $twitch-color;
+    text-decoration: none;
+  }
+}
+
+#channels div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font: 1em "Arial Narrow", Arial, sans-serif;
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid $twitch-color;
+    padding: 2px;
+    display: block;
+  }
+  a {
+    display: inline-block;
+    margin: 10px;
+    color: $twitch-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  span {
+    margin-bottom: 10px;
+  }
+}
+
+.selected {
+  text-decoration: underline;
+}

@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'dimitri';
+  src: url("../font/dimis___.ttf") format("truetype"); }
+body {
+  margin: 0; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+h1 {
+  margin: 0;
+  padding: 20px 0 5px 0;
+  color: #6441a4;
+  font: 3em dimitri, sans-serif; }
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-right: -20px;
+  padding: 20px; }
+
+li {
+  padding: 0 20px; }
+  li a, li a:visited {
+    font: 1.3em "Arial Narrow", Arial, sans-serif;
+    color: #6441a4;
+    text-decoration: none; }
+
+#channels div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font: 1em "Arial Narrow", Arial, sans-serif; }
+  #channels div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #6441a4;
+    padding: 2px;
+    display: block; }
+  #channels div a {
+    display: inline-block;
+    margin: 10px;
+    color: #6441a4;
+    text-decoration: none; }
+    #channels div a:hover {
+      text-decoration: underline; }
+  #channels div span {
+    margin-bottom: 10px; }
+
+.selected {
+  text-decoration: underline; }
+
+/*# sourceMappingURL=styles.css.map */
